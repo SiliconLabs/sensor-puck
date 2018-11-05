@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4d4d4d"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heartrate" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Heart Rate" />
+
+        <TextView
+            android:id="@+id/HeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Signal"
+            android:textSize="38sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/Graph"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            androidPlot.graphWidget.marginBottom="0dp"
+            androidPlot.graphWidget.marginLeft="0dp"
+            androidPlot.graphWidget.marginRight="0dp"
+            androidPlot.graphWidget.marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/Info"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:text="Remove finger from HRM to measure environment" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
